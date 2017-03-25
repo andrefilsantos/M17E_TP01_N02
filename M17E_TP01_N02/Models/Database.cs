@@ -120,5 +120,40 @@ namespace M17E_TP01_N02.Models
             return true;
         }
         #endregion
+
+        public int executeScalar(string sql)
+        {
+            int valor = -1;
+            try
+            {
+                SqlCommand comando = new SqlCommand(sql, _ligacaoDb);
+                valor = (int)comando.ExecuteScalar();
+                comando.Dispose();
+            }
+            catch (Exception erro)
+            {
+                Console.Write(erro.Message);
+                return valor;
+            }
+            return valor;
+        }
+
+        public int executeScalar(string sql, List<SqlParameter> parametros)
+        {
+            int valor = -1;
+            try
+            {
+                SqlCommand comando = new SqlCommand(sql, _ligacaoDb);
+                comando.Parameters.AddRange(parametros.ToArray());
+                valor = (int)comando.ExecuteScalar();
+                comando.Dispose();
+            }
+            catch (Exception erro)
+            {
+                Console.Write(erro.Message);
+                return valor;
+            }
+            return valor;
+        }
     }
 }

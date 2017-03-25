@@ -253,12 +253,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Funcionario\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Assistencia\" />
     <Folder Include="Views\Clientes\" />
-    <Folder Include="Views\Funcionario\" />
     <Folder Include="Views\Logout\" />
     <Folder Include="Views\Maquinas\" />
   </ItemGroup>
