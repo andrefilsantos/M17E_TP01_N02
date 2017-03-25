@@ -8,7 +8,7 @@ namespace M17E_TP01_N02
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
         }
     }
 }
