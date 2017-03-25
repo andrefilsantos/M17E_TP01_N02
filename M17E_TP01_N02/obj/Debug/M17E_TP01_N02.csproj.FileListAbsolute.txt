@@ -79,3 +79,4 @@ C:\Users\aluno\Desktop\M17E_TP01_N02\M17E_TP01_N02\bin\Microsoft.Owin.Security.T
 C:\Users\aluno\Desktop\M17E_TP01_N02\M17E_TP01_N02\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\aluno\Desktop\M17E_TP01_N02\M17E_TP01_N02\obj\Debug\M17E_TP01_N02.dll
 C:\Users\aluno\Desktop\M17E_TP01_N02\M17E_TP01_N02\obj\Debug\M17E_TP01_N02.pdb
+C:\Users\aluno\Desktop\M17E_TP01_N02\M17E_TP01_N02\obj\Debug\M17E_TP01_N02.csprojResolveAssemblyReference.cache

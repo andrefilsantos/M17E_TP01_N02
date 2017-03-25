@@ -12,6 +12,13 @@ namespace M17E_TP01_N02.Models
         [Required(ErrorMessage = "Tem de indicar o nome do cliente")]
         public string Nome { get; set; }
 
+        [Required(ErrorMessage = "Tem de indicar o nome de utilizador do cliente")]
+        public string Username;
+
+        [Required(ErrorMessage = "Tem de indicar uma password para o cliente")]
+        [MinLength(5, ErrorMessage = "Password demasiado insegura. Deve ter, pelo menos, 5 carateres")]
+        public string Password;
+
         public string Morada { get; set; }
 
         public string Telefone { get; set; }

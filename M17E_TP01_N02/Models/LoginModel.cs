@@ -19,10 +19,10 @@ namespace M17E_TP01_N02.Models
     {
         public ClientesModel LoginCliente(LoginModel login)
         {
-            string sql = "SELECT * FROM utilizadores WHERE nome=@nome AND password=HASHBYTES('SHA2_512',@password)"; //TODO: Refazer Query
+            string sql = "SELECT * FROM Clientes WHERE username=@username AND password=HASHBYTES('SHA2_512',@password)"; //TODO: Refazer Query
             List<SqlParameter> parametros = new List<SqlParameter>()
             {
-                new SqlParameter() { ParameterName="@nome", SqlDbType=SqlDbType.VarChar, Value=login.Username },
+                new SqlParameter() { ParameterName="@username", SqlDbType=SqlDbType.NVarChar, Value=login.Username },
                 new SqlParameter() { ParameterName="@password", SqlDbType=SqlDbType.VarChar, Value=login.Password },
             };
             var dados = Database.Instance.SqlQuery(sql, parametros);
@@ -38,10 +38,10 @@ namespace M17E_TP01_N02.Models
 
         public FuncionariosModel LoginFuncionario(LoginModel login)
         {
-            string sql = "SELECT * FROM utilizadores WHERE nome=@nome AND password=HASHBYTES('SHA2_512',@password)"; //TODO: Refazer Query
+            string sql = "SELECT * FROM Funcionarios WHERE username=@username AND password=HASHBYTES('SHA2_512',@password)"; 
             List<SqlParameter> parametros = new List<SqlParameter>()
             {
-                new SqlParameter() {ParameterName="@nome",SqlDbType=SqlDbType.VarChar,Value=login.Username },
+                new SqlParameter() {ParameterName="@username",SqlDbType=SqlDbType.NVarChar,Value=login.Username },
                 new SqlParameter() {ParameterName="@password",SqlDbType=SqlDbType.VarChar,Value=login.Password },
             };
             var dados = Database.Instance.SqlQuery(sql, parametros);
