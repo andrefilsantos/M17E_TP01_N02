@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
-using System.Linq;
-using System.Web;
 
 namespace M17E_TP01_N02.Models
 {
@@ -46,7 +44,7 @@ namespace M17E_TP01_N02.Models
             {
 
                 var novo = new FuncionariosModel();
-                novo.IdCliente = int.Parse(dados[0].ToString());
+                novo.IdFuncionario = int.Parse(dados[0].ToString());
                 //TODO: Outros Parametros
                 lista.Add(novo);
             }
