@@ -39,7 +39,7 @@ namespace M17E_TP01_N02.Models
 
     public class DbAssistencia
     {
-        public List<AssistenciaModel> lista()
+        public List<AssistenciaModel> Lista()
         {
             var registos = Database.Instance.SqlQuery("SELECT * FROM assistencias WHERE active = 1");
             var lista = new List<AssistenciaModel>();

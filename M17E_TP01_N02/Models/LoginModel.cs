@@ -15,7 +15,7 @@ namespace M17E_TP01_N02.Models
         public string Password { get; set; }
     }
 
-    public class LoginDB
+    public class LoginDb
     {
         public ClientesModel LoginCliente(LoginModel login)
         {

@@ -38,10 +38,24 @@ namespace M17E_TP01_N02.Controllers {
         [ValidateAntiForgeryToken]
         public ActionResult Edit(FuncionariosModel dados) {
             if (ModelState.IsValid) {
-                _bd.AtualizarCliente(dados);
+                _bd.AtualizarFuncionario(dados);
                 return RedirectToAction("index");
             }
             return View(dados);
         }
+
+        public ActionResult Delete(int? id) {
+            if (id == null) return RedirectToAction("Index");
+            return View(_bd.Lista((int)id)[0]);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Delete")]
+        public ActionResult ConfirmarDelete(int? id) {
+            if (id != null) _bd.RemoverFuncionario((int)id);
+            return RedirectToAction("Index");
+        }
+
     }
 }

@@ -121,7 +121,7 @@ namespace M17E_TP01_N02.Models
         }
         #endregion
 
-        public int executeScalar(string sql)
+        public int ExecuteScalar(string sql)
         {
             int valor = -1;
             try
@@ -138,7 +138,7 @@ namespace M17E_TP01_N02.Models
             return valor;
         }
 
-        public int executeScalar(string sql, List<SqlParameter> parametros)
+        public int ExecuteScalar(string sql, List<SqlParameter> parametros)
         {
             int valor = -1;
             try

@@ -24,7 +24,7 @@ namespace M17E_TP01_N02.Models
 
     public class DbMaquinas
     {
-        public List<MaquinasModel> lista()
+        public List<MaquinasModel> Lista()
         {
             var registos = Database.Instance.SqlQuery("SELECT * FROM maquinas WHERE active = 1");
             var lista = new List<MaquinasModel>();

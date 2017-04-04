@@ -1,0 +1,47 @@
+TODO Geral:  
+  ☐ Redesenhar página inicial
+  ☐ Editar Navbar
+  ☐ Editar About
+  ☐ Apagar Contact
+  ☐ Editar Footer
+  ☐ Editar Type nos Campos Password 
+
+TODO Login:
+  ☐ Editar Título 
+  ☐ Recuperar Password
+
+TODO Área de Administrador:
+  ☐ Adicionar Assistência
+  ☐ Editar Assistência
+  ☐ Concluir Assistencias
+  ✔ Adicionar Cliente @started(17-04-03 20:26) @done (17-04-03 20:52) @lasted(0:26)
+  ✔ Editar Clientes @started(17-04-03 20:52) @done (17-04-03 21:10) @lasted(0:18)
+  ✔ Listar Clientes @started(17-04-04 09:04) @done (17-04-04 09:24) @lasted(0:20)
+  ✔ Eliminar Clientes @started(17-04-04 09:31) @done (17-04-04 09:40) @lasted(0:09)
+  ☐ Ver Clientes Eliminados
+  ☐ Recuperar Clientes
+  ✔ Adicionar Funcionários @started(17-04-04 09:43) @done (17-04-04 09:44) @lasted(0:01)
+  ✔ Editar Funcionários @started(17-04-04 09:43) @done (17-04-04 09:44) @lasted(0:01)
+  ✔ Eliminar Funcionários @started(17-04-04 10:44) @done (17-04-04 10:57) @lasted(0:13)
+  ☐ Ver Estatisticas
+  ☐ Assistências do dia
+  ☐ Imprimir PDF com 'fatura' (?)
+  ☐ Enviar Mensagem a Clintes
+  ☐ Enviar Mensagem a Funcionários
+
+TODO Área Funcionário:
+  ☐ Estatisticas
+  ☐ Assistencias do dia
+  ☐ Adicionar Assistência
+  ☐ Editar Assistência
+  ☐ Concluir Assistencias
+  ✔ Adicionar Cliente @started(17-04-04 10:58) @done (17-04-04 10:58) @lasted(a bit)
+  ✔ Editar Clientes @started(17-04-04 11:00) @done (17-04-04 11:00) @lasted(a bit)
+  ☐ Imprimir PDF com 'fatura' (?)
+  ☐ Enviar Mensagem a Clintes
+
+TODO Área de Cliente:
+  ☐ Ver Histórico de Assistencias
+  ☐ Fazer Pedido de Assistencias
+  ☐ Enviar Mensagens para a Assistencia 
+  ☐ Enviar Sugestões/Opiniões

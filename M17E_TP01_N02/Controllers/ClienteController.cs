@@ -6,7 +6,7 @@ namespace M17E_TP01_N02.Controllers {
         readonly DbClientes _bd = new DbClientes();
         // GET: Clientes
         public ActionResult Index() {
-            return View(_bd.Lista());
+            return View(_bd.ListaAllActive());
         }
 
         public ActionResult Create() {
@@ -23,7 +23,7 @@ namespace M17E_TP01_N02.Controllers {
         }
 
         public ActionResult Edit(int? id) {
-            if (id == null) return RedirectToAction("index");
+            if (id == null) return RedirectToAction("Index");
             return View(_bd.Lista((int)id)[0]);
         }
         [HttpPost]
@@ -31,9 +31,23 @@ namespace M17E_TP01_N02.Controllers {
         public ActionResult Edit(ClientesModel dados) {
             if (ModelState.IsValid) {
                 _bd.AtualizarCliente(dados);
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
             }
             return View(dados);
+        }
+
+        public ActionResult Delete(int? id) {
+            if (id == null) return RedirectToAction("Index");
+            return View(_bd.Lista((int)id)[0]);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Delete")]
+        public ActionResult ConfirmarDelete(int? id)
+        {
+            if (id != null) _bd.RemoverCliente((int)id);
+            return RedirectToAction("Index");
         }
     }
 }
