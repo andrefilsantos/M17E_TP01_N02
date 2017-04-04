@@ -261,12 +261,13 @@
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Cliente\Delete.cshtml" />
     <Content Include="Views\Funcionario\Delete.cshtml" />
+    <Content Include="Views\Assistencia\Create.cshtml" />
+    <Content Include="Views\Maquinas\Create.cshtml" />
+    <Content Include="Views\Maquinas\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Assistencia\" />
     <Folder Include="Views\Logout\" />
-    <Folder Include="Views\Maquinas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -11,7 +11,7 @@ TODO Login:
   ☐ Recuperar Password
 
 TODO Área de Administrador:
-  ☐ Adicionar Assistência
+  ✔ Adicionar Assistência @started(17-04-04 16:29) @done (17-04-04 18:40) @lasted(2:11)
   ☐ Editar Assistência
   ☐ Concluir Assistencias
   ✔ Adicionar Cliente @started(17-04-03 20:26) @done (17-04-03 20:52) @lasted(0:26)
@@ -23,6 +23,9 @@ TODO Área de Administrador:
   ✔ Adicionar Funcionários @started(17-04-04 09:43) @done (17-04-04 09:44) @lasted(0:01)
   ✔ Editar Funcionários @started(17-04-04 09:43) @done (17-04-04 09:44) @lasted(0:01)
   ✔ Eliminar Funcionários @started(17-04-04 10:44) @done (17-04-04 10:57) @lasted(0:13)
+  ✔ Adicionar Máquina @started(17-04-04 18:14) @done (17-04-04 18:24) @lasted(0:10)
+  ✔ Editar Máquina @started(17-04-04 18:24) @done (17-04-04 18:36) @lasted(0:12) 
+  ☐ Eliminar Máquinas @started(17-04-04 18:37)
   ☐ Ver Estatisticas
   ☐ Assistências do dia
   ☐ Imprimir PDF com 'fatura' (?)
@@ -37,6 +40,9 @@ TODO Área Funcionário:
   ☐ Concluir Assistencias
   ✔ Adicionar Cliente @started(17-04-04 10:58) @done (17-04-04 10:58) @lasted(a bit)
   ✔ Editar Clientes @started(17-04-04 11:00) @done (17-04-04 11:00) @lasted(a bit)
+  ☐ Adicionar Máquina
+  ☐ Editar Máquina
+  ☐ Eliminar Máquina
   ☐ Imprimir PDF com 'fatura' (?)
   ☐ Enviar Mensagem a Clintes
 
