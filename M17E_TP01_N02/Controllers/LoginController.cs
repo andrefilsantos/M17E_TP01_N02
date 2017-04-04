@@ -6,7 +6,7 @@ namespace M17E_TP01_N02.Controllers
 {
     public class LoginController : Controller
     {
-        LoginDB bd = new LoginDB();
+        LoginDb _bd = new LoginDb();
         // GET: Login
         public ActionResult Index()
         {
@@ -19,8 +19,8 @@ namespace M17E_TP01_N02.Controllers
         {
             if (ModelState.IsValid)
             {
-                FuncionariosModel funcionario = bd.LoginFuncionario(dados);
-                ClientesModel cliente = bd.LoginCliente(dados);
+                FuncionariosModel funcionario = _bd.LoginFuncionario(dados);
+                ClientesModel cliente = _bd.LoginCliente(dados);
 
                 if (funcionario == null && cliente == null)
                 {
